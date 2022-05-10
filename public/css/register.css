@@ -1,0 +1,321 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form {
+    width: 50%;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.form-search-bar {
+    background-color: #FFF;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.nameField input, .userField input, .passwordField input, #birth_date, #address{
+    background-color: #FFF;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #666;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 2px
+}
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+
+footer section {
+    text-align: center;
+    margin: 50px;
+    overflow: visible;
+    
+}
+
+footer{
+    background-color: white;
+    padding-top:  5px;
+    padding-bottom: 5px;
+}
+
+footer h3 {
+    white-space: nowrap;
+    padding-bottom: 5px;
+
+}
+
+
+.footer-icons {
+    margin: 50px;
+    color: #0044AA;
+}
+
+footer section.copyright-message {
+    text-align: left;
+    margin-left: 10px;
+    align-self: left;
+}
+
+.footer-icons {
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+
+form input {
+
+    background-color: #FFF;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #666;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.profile {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 90%;
+justify-content: space-between;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+
+
+@media (max-width: 360px) {
+    header nav {
+        display: none;
+    }
+
+.header div.top-header p{
+    display: block;
+    }
+   
+
+    header .form .input, header .form .submit {
+        padding: 10px;
+        
+    }
+    footer h3{
+        width: 50%;
+    }
+    h4{
+        padding-bottom: 5px;
+    }
+  h4 input{
+        border-radius: 5px;
+        background-color: white;
+    }
+}
+
+
+
+@media (min-width: 361px) {
+
+    .nav-bar{
+        justify-content: space-between;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    header ul li{
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .burger-menu{ 
+        display: none;
+    }
+    
+
+    header div .logo{
+       
+         display: inline-flex;
+         width: 25%;
+         padding: 40px;
+     }
+ 
+     .header div.top-header p{
+       
+        width: 35%;
+    }
+
+    header .form{
+       
+        width: 33%;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    div.top-header{
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    header .form .input {
+        padding: 10px;
+        
+    }
+
+    header .form .submit{
+        align-self: center;
+        padding: 10px;
+        padding-right: 10px;
+    }
+
+   
+   
+
+    @media (min-width: 769px) {
+      
+
+        div.top-header{
+            display: inline-flex;
+            width: 100%;
+            align-items: center;
+            padding: 2px;
+            justify-content: space-between;
+            
+        }
+
+        header .form{
+            width: 35%;
+            align-items: center;
+            margin-left: 10px;
+            padding-right: 40px;
+        }
+
+        footer div{
+            display: inline-flex;
+            width: fit-content;
+            align-content: center;
+            }
+        }
+
+        footer div section.copyright-message {
+            background-color: blue;
+            margin-left: 10px;
+            display: none;
+        }
+        
+
+        footer h3{
+            
+            white-space:normal;
+            display: block
+          
+        }
+        
+
+      
+        
+       
+}
